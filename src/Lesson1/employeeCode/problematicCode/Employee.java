@@ -1,4 +1,7 @@
-package Lesson1;
+package Lesson1.employeeCode.problematicCode;
+
+
+
 ///issue in code ?
 public class Employee {
     private int id;
