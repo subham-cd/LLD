@@ -1,0 +1,18 @@
+what is abstact class?
+
+we cannot instantiate an abstract class
+we can't initialize an object out of it.
+
+purpose:Generally it is used as a base class for other class to provide definitions that multiple derived class
+
+absrtact classed support two types of methods
+
+-----------abstract classes--which do not have an implemnet
+-----------non-abstact classed --concrete class --these have implement
+
+
+//interace :simple contract
+
+they dont have implemnetaions
+//cannot ceate object of interface only abstrct method
+
