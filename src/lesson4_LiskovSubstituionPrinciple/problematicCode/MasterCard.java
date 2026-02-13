@@ -1,4 +1,4 @@
-package lesson4_ListOfSubstituionPrinciple.problematicCode;
+package lesson4_LiskovSubstituionPrinciple.problematicCode;
 
 public class MasterCard extends CreditCard{
     @Override
@@ -25,5 +25,15 @@ public class MasterCard extends CreditCard{
         System.out.println(" Mandate pay Implementaion of MasterCard");
 
 
+    }
+
+    @Override
+    public void upiPayment() {
+        throw new NoSuchMethodException();
+    }
+
+    @Override
+    public void intlPayment() {
+        System.out.println("International payment through mastercard");
     }
 }

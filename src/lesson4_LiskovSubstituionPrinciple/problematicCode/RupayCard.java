@@ -1,4 +1,4 @@
-package lesson4_ListOfSubstituionPrinciple.problematicCode;
+package lesson4_LiskovSubstituionPrinciple.problematicCode;
 
 public class RupayCard extends CreditCard{
     @Override
@@ -25,5 +25,14 @@ public class RupayCard extends CreditCard{
         System.out.println(" Mandate pay Implementaion of RupayCard");
 
 
+    }
+    @Override
+    public void upiPayment(){
+        System.out.println("Payment by upi");
+    }
+
+    @Override
+    public void intlPayment() {
+        throw new NoSuchMethodException();
     }
 }
