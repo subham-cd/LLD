@@ -1,0 +1,6 @@
+Instead of depending in concrete class you should depend on abstrcation
+highlevel module should not depend on low level modules but instead depend on abstrcation class
+
+and it is done by dependency injestion and inversion stand here something ,
+that you are not directly depend on something instead you are depending on abstract class,
+ and other also depend on that abstact clss like both have common abstra.cation layer
