@@ -1,10 +1,5 @@
 package designPattern.betterCode.v3;
 
-
-
-
-import java.util.HashMap;
-
 public class Product {
 
     private int id;
@@ -20,31 +15,23 @@ public class Product {
     private double weight;
     private String color;
 
-    Product(Builder b) {
-        if(b.getPrice()>0){
-            this.price=b.getPrice();
-        }
-
+    // Constructor takes Builder object
+    public Product(Builder b) {
+        this.id = b.getId();
+        this.name = b.getName();
+        this.description = b.getDescription();
+        this.price = b.getPrice();
+        this.category = b.getCategory();
+        this.brand = b.getBrand();
+        this.stock = b.getStock();
+        this.rating = b.getRating();
+        this.discount = b.getDiscount();
+        this.isAvailable = b.isAvailable();
+        this.weight = b.getWeight();
+        this.color = b.getColor();
     }
 
-    ///..............
-
-
-
-    void displayProduct() {
-        System.out.println("Product ID: " + id);
-        System.out.println("Name: " + name);
-        System.out.println("Price: ₹" + price);
-        System.out.println("Category: " + category);
-        System.out.println("Brand: " + brand);
-        System.out.println("Stock: " + stock);
-        System.out.println("Rating: " + rating);
-        System.out.println("Discount: " + discount + "%");
-        System.out.println("Available: " + isAvailable);
-        System.out.println("Weight: " + weight + "kg");
-        System.out.println("Color: " + color);
-        System.out.println("----------------------");
+    public void display() {
+        System.out.println("Product: " + name + " | Price: " + price + " | Brand: " + brand);
     }
 }
-
-
